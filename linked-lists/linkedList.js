@@ -1,9 +1,4 @@
-class Node {
-  constructor(data) {
-    this.data = data;
-    this.next = null;
-  }
-}
+var Node = require('./node.js');
 
 class LinkedList {
   constructor() {
@@ -99,34 +94,4 @@ class LinkedList {
   }
 }
 
-
-function detectCycle(linkedList) {
-  const head = linkedList.head;
-  let fast = head.next.next;
-  let slow = head;
-
-  while(fast !== null && fast.next !== null && slow !== null) {
-    if (fast.data === slow.data) {
-      return true;
-    }
-    fast = fast.next.next;
-    slow = slow.next;
-  }
-
-  return false;
-}
-
-var list  = new LinkedList();
-list.append('a');
-list.append('b');
-list.append('c');
-list.append('d');
-list.append('e');
-list.append('f');
-list.append('g');
-
-list.show();
-console.log(detectCycle(list));
-list.createCycle();
-list.show();
-console.log(detectCycle(list));
+module.exports = LinkedList;
