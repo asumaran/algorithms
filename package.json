@@ -1,0 +1,20 @@
+{
+  "name": "linked-lists",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asumaran/algorithms.git"
+  },
+  "keywords": [],
+  "author": "@asumaran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asumaran/algorithms/issues"
+  },
+  "homepage": "https://github.com/asumaran/algorithms#readme"
+}
