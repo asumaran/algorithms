@@ -47,6 +47,10 @@ class LinkedList {
     let current = this.head;
     let message = [];
 
+    if (current === null) {
+      return;
+    }
+
     while(current.next !== null) {
       if(current.isCycle === true) {
         message.push(`${current.data} -> \n\t ${current.next.data} -> ${current.next.next.data} -> ${current.next.next.next.data} -> ${current.next.next.next.next.data} -> ${current.next.next.next.next.next.data}...`);
