@@ -74,6 +74,20 @@ class LinkedList {
     return count;
   }
 
+  getLast() {
+    let current = this.head;
+
+    if (current === null) {
+      return;
+    }
+
+    while(current.next !== null) {
+      current = current.next;
+    }
+
+    return current;
+  }
+
   // For technical purposes
   createCycle() {
     let r = 5; //Math.floor(Math.random() * this.getCount());
